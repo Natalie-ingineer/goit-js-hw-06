@@ -1,24 +1,15 @@
-console.log(document);
 
-const body = document.body;
-console.log(body);
 
 const list = document.querySelectorAll("li.item");
 console.dir(`Number of categories: ${list.length}`);
 
-// const title = document.querySelector("h2");
-// console.log(title.textContent);
+ const categoriesList = document.querySelectorAll("#categories .item");
+ 
+categoriesList.forEach((item) => {
+    const title = item.querySelector("h2").textContent;
+    const elementsLi = item.querySelectorAll("li").length;
 
-const numberCatogories = list.forEach(function (h2, index) {
-    console.log(`Category: ${h2.textContent}`);
-    console.log(`Elements: ${index.length}`);
+    console.dir(`Category: ${title}`);
+    console.log(`Elements: ${elementsLi}`);
 });
 
-
-
-
-// numbers.forEach(function (number, index) {
-//     console.log(`Індекс ${index}, значення ${number}`);
-//   });
-
-// ul#categories
