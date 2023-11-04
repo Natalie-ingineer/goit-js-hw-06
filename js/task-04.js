@@ -8,14 +8,14 @@ let counterValue = 0;
 
 const handleClickIncrement = () => {
   counterValue += 1;
-  console.log("Button was increment");
+  console.log(`${counterValue}`);
 };
 
 btnIncrement.addEventListener("click", handleClickIncrement);
 
 const handleClickDecrement = () => {
   counterValue -= 1;
-  console.log("Button was decrement");
+  console.log(`${counterValue}`);
 };
 
 btnDecrement.addEventListener("click", handleClickDecrement);
