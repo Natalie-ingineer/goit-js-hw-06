@@ -8,8 +8,8 @@ textInput.addEventListener("blur", () => {
   const inputValue = textInput.value.trim().length;
 
   if (parseInt(loseFocus.dataset.length) === inputValue) {
-    textInput.classList.toggle("valid");
+    textInput.classList.add("valid");
   } else {
-    textInput.classList.toggle("invalid");
+    textInput.classList.replace("valid", "invalid");
   }
 });
