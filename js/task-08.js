@@ -29,6 +29,12 @@ function handleSubmit(event) {
   if (email === "" || password === "") {
     return alert(`Помилка! Всі поля повинні бути заповнені!`);
   }
-  console.log(`Email: ${email}, Password: ${password}`);
+  
+  const data = {
+    Email: email,
+    Password: password,
+  }
+   console.log(data);
+  
   form.reset();
 }
