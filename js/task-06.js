@@ -9,7 +9,9 @@ textInput.addEventListener("blur", () => {
 
   if (parseInt(loseFocus.dataset.length) === inputValue) {
     textInput.classList.add("valid");
+    textInput.classList.remove("invalid");
   } else {
-    textInput.classList.replace("valid", "invalid");
+    textInput.classList.add("invalid");
+    textInput.classList.remove("valid");
   }
 });
