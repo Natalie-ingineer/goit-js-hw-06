@@ -10,9 +10,17 @@ const ingredients = [
 const list = document.querySelector("#ingredients");
 console.log(list);
 
-ingredients.forEach((product) => {
-  const liItem = document.createElement("li");
-  liItem.textContent = `${product}`;
-  liItem.classList.add("item");
-  list.append(liItem);
-});
+const makeProducts = (products) => {
+  return products.map((product) => {
+    const liItem = document.createElement("li");
+    liItem.textContent = `${product}`;
+    liItem.classList.add("item");
+
+    return liItem;
+  });
+};
+
+const elements = makeProducts(ingredients);
+
+list.append(...elements);
+console.log(elements);
