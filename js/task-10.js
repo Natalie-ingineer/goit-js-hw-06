@@ -74,32 +74,48 @@
 // console.log(a);
 // console.log(b);
 
-const makeCounter = () => {
-  let currentCouter = 0;
+// const makeCounter = () => {
+//   let currentCouter = 0;
 
-  const getCurrentCount = () => {
-    return currentCouter;
-  };
+//   const getCurrentCount = () => {
+//     return currentCouter;
+//   };
 
-  const incrementCount = () => {
-    currentCouter = currentCouter + 1;
-    return currentCouter;
-  };
+//   const incrementCount = () => {
+//     currentCouter = currentCouter + 1;
+//     return currentCouter;
+//   };
 
-  const decrementCount = () => {
-    currentCouter = currentCouter - 1;
-    return currentCouter;
-  };
+//   const decrementCount = () => {
+//     currentCouter = currentCouter - 1;
+//     return currentCouter;
+//   };
 
-  return { getCurrentCount, incrementCount, decrementCount };
-};
+//   return { getCurrentCount, incrementCount, decrementCount };
+// };
 
-const counter1 = makeCounter();
-const counter2 = makeCounter();
+// const counter1 = makeCounter();
+// const counter2 = makeCounter();
 
-console.log(counter1.incrementCount());
-console.log(counter1.getCurrentCount());
-console.log(counter1.decrementCount());
-console.log(counter1.getCurrentCount());
-console.log(counter1.decrementCount());
-console.log(counter1.getCurrentCount());
+// console.log(counter1.incrementCount());
+// console.log(counter1.getCurrentCount());
+// console.log(counter1.decrementCount());
+// console.log(counter1.getCurrentCount());
+// console.log(counter1.decrementCount());
+// console.log(counter1.getCurrentCount());
+
+const animals = ["Cat", "Dog", "Cow", "Ship", "Shark"];
+console.log(animals.pop());
+console.log(animals);
+console.log(animals.push("Horse"));
+console.log(animals);
+console.log(animals.shift());
+console.log(animals);
+console.log(animals.unshift("Deer", "Hamster"));
+console.log(animals);
+console.log(animals.reverse());
+console.log(animals);
+console.log(animals.splice(0, 3, "elephant", "squirrel"));
+console.log(animals);
+console.log(animals.includes("hamster"));
+console.log(animals.includes("Dog"));
