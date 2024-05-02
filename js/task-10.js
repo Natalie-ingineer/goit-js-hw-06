@@ -42,3 +42,64 @@
 // .toString(16)
 // .padStart(6, 0)}`;
 // }
+
+// let a = 5;
+// let b = a;
+
+// console.log(a);
+// console.log(b);
+
+// a = 10;
+// console.log(a);
+// console.log(b);
+
+// let a = "Bob";
+// let b = a;
+
+// console.log(a);
+// console.log(b);
+
+// a = "Bill";
+// console.log(a);
+// console.log(b);
+
+// let a = "Bob";
+// let b = 11;
+// let c = 125;
+
+// console.log(a + b + c);
+// console.log(b);
+
+// a = "Bill";
+// console.log(a);
+// console.log(b);
+
+const makeCounter = () => {
+  let currentCouter = 0;
+
+  const getCurrentCount = () => {
+    return currentCouter;
+  };
+
+  const incrementCount = () => {
+    currentCouter = currentCouter + 1;
+    return currentCouter;
+  };
+
+  const decrementCount = () => {
+    currentCouter = currentCouter - 1;
+    return currentCouter;
+  };
+
+  return { getCurrentCount, incrementCount, decrementCount };
+};
+
+const counter1 = makeCounter();
+const counter2 = makeCounter();
+
+console.log(counter1.incrementCount());
+console.log(counter1.getCurrentCount());
+console.log(counter1.decrementCount());
+console.log(counter1.getCurrentCount());
+console.log(counter1.decrementCount());
+console.log(counter1.getCurrentCount());
